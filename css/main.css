@@ -1,0 +1,212 @@
+/* ==========================================================================
+    Custom styles - Mobile First
+   ========================================================================== */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.section-hdr {
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0,0,0,.25);
+}
+
+/* -- About -- */
+.section-about {
+    background-color: #31b67f;
+}
+
+.about {
+    color: #fff;
+}
+
+.about .profile-pic-container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about .profile-pic {
+    width: 160px;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,.55);
+}
+
+.about .about-details {
+    padding: 0;
+}
+
+.about .about-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about .about-heading h2,
+.about .about-heading h3 {
+    margin: 0;
+}
+
+.about .about-heading h3 {
+    font-size: 16px;
+}
+
+.about .about-resume {
+    margin-bottom: 30px;
+}
+
+/* -- Skills -- */
+.section-skills {
+    background-color: #a0a7a4;
+}
+
+.skills {
+    color: #fff;
+}
+
+/* -- Portfolio -- */
+.section-portfolio {
+    padding: 0 0 40px 0;
+    background-color: #48c2dc;
+}
+
+.carousel-portfolio {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-portfolio img {
+    width: 100%;
+}
+
+/* -- Contact -- */
+.section-contact {
+    border-top: 28px solid #313438;
+    background-color: #2a2c30;
+}
+
+.contact {
+    color: #fff;
+    background-color: #2a2c30;
+}
+
+.contact-details {
+    background-color: #121316;
+}
+
+/* -- Connect -- */
+.connect {
+    color: #fff;
+    background-color: #1e1f21;
+}
+
+.connect h3 {
+    font-size: 26px;
+}
+
+.connect .social-icons li {
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+}
+
+.connect .social-icon {
+    font-size: 18px;
+    width: 42px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+.social-icon,
+.social-icon:hover,
+.social-icon:active {
+    color: #fff;
+}
+
+.social-icon.facebook {
+    background: -webkit-linear-gradient(top, #3b5998 0%, #1e2e4f 100%);
+    background: linear-gradient(180deg, #3b5998 0%, #1e2e4f 100%);
+}
+.social-icon.twitter {
+    background: -webkit-linear-gradient(top, #2daae1 0%, #156c93 100%);
+    background: linear-gradient(180deg, #2daae1 0%, #156c93 100%);
+}
+.social-icon.linkedin {
+    background: -webkit-linear-gradient(top, #52a2cc 0%, #2a6c8e 100%);
+    background: linear-gradient(180deg, #52a2cc 0%, #2a6c8e 100%);
+}
+.social-icon.google {
+    background: -webkit-linear-gradient(top, #d23e2b 0%, #7d251a 100%);
+    background: linear-gradient(180deg, #d23e2b 0%, #7d251a 100%);
+}
+.social-icon.github {
+    background: -webkit-linear-gradient(top, #444444 0%, #111111 100%);
+    background: linear-gradient(180deg, #444444 0%, #111111 100%);
+}
+.social-icon.stack-overflow {
+    background: -webkit-linear-gradient(top, #fe7a15 0%, #ac4b01 100%);
+    background: linear-gradient(180deg, #fe7a15 0%, #ac4b01 100%);
+}
+.social-icon.instagram {
+    background: -webkit-linear-gradient(top, #a67359 0%, #644535 100%);
+    background: linear-gradient(180deg, #a67359 0%, #644535 100%);
+}
+.social-icon.snapchat {
+    background: -webkit-linear-gradient(top, #fffc00 0%, #a09e04 100%);
+    background: linear-gradient(180deg, #fffc00 0%, #a09e04 100%);
+}
+.social-icon.pinterest {
+    background: -webkit-linear-gradient(top, #cb2027 0%, #731216 100%);
+    background: linear-gradient(180deg, #cb2027 0%, #731216 100%);
+}
+
+.twitter-feed {
+    margin-bottom: 20px;
+}
+
+
+/* -- Footer -- */
+footer {
+    color: #7e7f7e;
+    padding: 20px;
+    background-color: #313438;
+    font-size: 14px;
+}
+
+
+
+
+/* ==========================================================================
+    Small Devices - tablets, 768px and up
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+
+/* ==========================================================================
+    Medium Devices - desktops, tablets (landscape), 992px and up
+   ========================================================================== */
+@media screen and (min-width: 992px) {
+
+}
+
+
+
+
+/* ==========================================================================
+    Large Devices - large desktops, 1200px and up
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
