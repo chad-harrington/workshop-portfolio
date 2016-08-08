@@ -1,5 +1,5 @@
 # Workshop Portfolio
-MXM Workshop - creating a responsive portfolio page using Bootstrap framework
+MXM Workshop - creating a responsive portfolio page using Bootstrap framework.
 
 ## Resources
 ### Bootstrap 3
@@ -10,6 +10,7 @@ MXM Workshop - creating a responsive portfolio page using Bootstrap framework
 
 ### Text Editors
 - Brackets - <http://brackets.io/>
+
     - Popular Extensions:
         - Autoprefixer
         - File Icons
@@ -20,10 +21,18 @@ MXM Workshop - creating a responsive portfolio page using Bootstrap framework
         - Beautify
         - Brackets Bower
         - Brackets Git
+
     - Themes:
         - Solarized Dark (by Shane Ramiah)
 
 - Sublime Text - <https://www.sublimetext.com/>
+- Dreamweaver - <http://www.adobe.com/products/dreamweaver.html>
+
+### Animations
+- Animate.css - <https://daneden.github.io/animate.css/>
+
+### Favicon
+- Favicon Generator - <http://realfavicongenerator.net/>
 
 ### Helpful Sites
 - CSS Tricks - <https://css-tricks.com/>
