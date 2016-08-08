@@ -3,13 +3,67 @@
    ========================================================================== */
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 .section-hdr {
     text-align: center;
     text-shadow: 0 2px 0 rgba(0,0,0,.25);
 }
+
+.btn .fa,
+.btn .glyphicon {
+    margin-right: 5px;
+}
+
+/* -- Navbar -- */
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.navbar-brand .logo {
+    display: inline-block;
+    height: 40px;
+    margin-right: 6px;
+}
+
+.navbar-brand > span {
+    font-size: 18px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-toggle-cover {
+    margin: 0;
+    padding: 18px;
+    border-radius: 0;
+    border-width: 0 0 0 1px;
+}
+
+.navbar-toggle-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.navbar-toggle-left.navbar-toggle-cover {
+    border-width: 0 1px 0 0;
+}
+
+.navbar-brand-center {
+    text-align: center;
+    display: block;
+}
+
+.navbar-brand-center .navbar-brand {
+    float: none;
+    display: block;
+}
+
+.navbar-toggle-left + .navbar-brand {
+    margin-left: 60px;
+}
+
 
 /* -- About -- */
 .section-about {
@@ -63,10 +117,131 @@ body {
     color: #fff;
 }
 
+/* Skill Item */
+.skill-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.skill-item > img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-item > .skill-item-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background: url(/img/ui/patterns/opacity-black-75.png) repeat 0 0;
+}
+
+.skill-item > .skill-item-info.open {
+    height: 100%;
+}
+
+.skill-item > .skill-item-info.open .skill-item-description {
+    font-size: 16px;
+}
+
+.skill-item > .skill-item-info.open .skill-item-description > .inner.animated {
+    display: block;
+}
+
+.skill-item > .skill-item-info.open .toggle-icon:before {
+    content: "\f068"; /* fa-minus */
+}
+
+.skill-item button {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+    color: @white;
+    height: 50px;
+    width: 100%;
+    border: 0;
+    background: @green;
+}
+
+.skill-item h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px 0 15px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: @font-size-h4;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+.skill-item .toggle-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    background: @green2;
+}
+
+.skill-item .toggle-icon:before {
+    vertical-align: middle;
+    display: inline-block;
+    font-family: hwd;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f067"; /* fa-plus */
+}
+
+.skill-item .skill-item-description {
+    color: @white;
+    height: 100%;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+}
+
+.skill-item .skill-item-description > .inner {
+    height: 100%;
+    overflow: auto;
+    display: none;
+    padding: 20px;
+}
+
+.skill-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-icons > li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
 /* -- Portfolio -- */
 .section-portfolio {
     padding: 0 0 40px 0;
     background-color: #48c2dc;
+}
+
+.portfolio {
+    color: #fff;
 }
 
 .carousel-portfolio {
@@ -86,16 +261,37 @@ body {
 
 .contact {
     color: #fff;
+    padding-top: 5px;
+    padding-bottom: 15px;
     background-color: #2a2c30;
 }
 
 .contact-details {
+    padding: 15px;
     background-color: #121316;
+}
+
+.contact-details img {
+    width: 75px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.contact-details .contact-list li {
+    margin-bottom: 3px;
+    line-height: 1.25;
+}
+
+.contact-details .fa-li {
+    text-align: left;
 }
 
 /* -- Connect -- */
 .connect {
     color: #fff;
+    padding-top: 5px;
+    padding-bottom: 15px;
     background-color: #1e1f21;
 }
 
@@ -183,6 +379,12 @@ footer {
     Small Devices - tablets, 768px and up
    ========================================================================== */
 @media screen and (min-width: 768px) {
+
+    /* -- Navbar -- */
+    .navbar-brand {
+        padding: 5px;
+        margin-right: 20px;
+    }
 
 }
 
