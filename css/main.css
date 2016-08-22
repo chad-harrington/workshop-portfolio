@@ -64,7 +64,7 @@ body {
 
 .navbar-brand-center .navbar-brand {
     float: none;
-    display: block;
+    display: inline-block;
 }
 
 .navbar-toggle-left + .navbar-brand {
