@@ -359,6 +359,28 @@ body {
     box-shadow: inset 0 0px 1px rgba(0,0,0,.1);
 }
 
+.carousel-caption {
+    padding: 0;
+    bottom: 0;
+}
+
+.carousel-indicators {
+    position: static;
+    float: left;
+    width: 100%;
+    margin: 5px auto 0 auto;
+}
+
+.carousel-indicators li {
+    vertical-align: middle;
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+}
+
 /* -- Contact -- */
 .section-contact {
     border-top: 28px solid #313438;
@@ -548,6 +570,14 @@ footer {
 
     .carousel-bottom .inner {
         display: block;
+    }
+
+    .carousel-indicators li {
+        border: 1px solid #dadada;
+    }
+
+    .carousel-indicators .active {
+        background-color: #dadada;
     }
 
     /* Contact */
