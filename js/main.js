@@ -10,6 +10,11 @@
         }
     });
 
+    // toggle skill item open/closed
+    $('.skill-item-info button').on('click', function() {
+        var $container = $(this).closest('.skill-item-info');
+        $container.toggleClass('open');
+    })
 
 
 }());
