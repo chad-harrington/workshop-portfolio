@@ -42,7 +42,7 @@ body {
 
 .navbar-toggle-cover {
     margin: 0;
-    padding: 18px;
+    padding: 15px 18px;
     border-radius: 0;
     border-width: 0 0 0 1px;
 }
@@ -69,6 +69,76 @@ body {
 
 .navbar-toggle-left + .navbar-brand {
     margin-left: 60px;
+}
+
+.navbar-toggle-icon {
+    display: inline-block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbar-toggle.navbar-toggle-icon:focus {
+    background: transparent;
+}
+
+.navbar-toggle.navbar-toggle-icon:hover:focus {
+    background: #ddd;
+}
+
+.navbar-toggle-icon .lines {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: #888;
+    vertical-align: middle;
+}
+.navbar-toggle-icon .lines:before,
+.navbar-toggle-icon .lines:after {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: #888;
+    content: '';
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform-origin: 2px center;
+    transform-origin: 2px center;
+}
+.navbar-toggle-icon .lines:before {
+    top: 8px;
+}
+.navbar-toggle-icon .lines:after {
+    top: -8px;
+}
+.navbar-toggle-icon.open .lines {
+    background: transparent;
+}
+.navbar-toggle-icon.open .lines:before,
+.navbar-toggle-icon.open .lines:after {
+    top: 0;
+    left: -6px;
+    width: 35px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.navbar-toggle-icon.open .lines:before {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+.navbar-toggle-icon.open .lines:after {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
 }
 
 
@@ -439,6 +509,9 @@ footer {
     .navbar-brand {
         padding: 5px;
         margin-right: 20px;
+    }
+    .navbar-toggle-icon {
+        display: none;
     }
 
     /* -- About -- */
